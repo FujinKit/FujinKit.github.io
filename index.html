@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Prism.js CSS Theme -->
+<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+<!-- Prism.js Core -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+
+<!-- Optional: Load language support (HTML, JS, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="et-hero-tabs">
+      <h1>FUJINKIT</h1>
+      <h3>UI components library for SASS builders</h3>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-intro">Introduction</a>
+        <a class="et-hero-tab" href="#tab-usage">Usage</a>
+        <a class="et-hero-tab" href="#tab-button">Button</a>
+        <a class="et-hero-tab" href="#tab-text">Text</a>
+        <a class="et-hero-tab" href="#tab-other">Other</a>
+        <span class="et-hero-tab-slider"></span>
+      </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+      <section class="et-slide" id="tab-intro">
+        <h3>
+          <section class="intro">
+            <h2>What is FujinKit?</h2>
+            <p>
+              FujinKit is a UI components library based on Web Components. Every
+              UI library out there aims to be elegant, pixel-perfect, and full
+              of life.
+              <br /><br />
+              We do not.
+              <br /><br />
+              We exist to serve the SASS (the traditional kind) builders of the
+              world. Our mission? Create boring, lifeless, but highly usable
+              components.
+            </p>
+            <p>
+              Every piece of our design is inspired by the beautiful bleakness
+              of Indian government websites. Their soul-crushing, joyless
+              layouts are our blueprint.
+              <br /><br />
+              But even we, as users, get frustrated when those same sites are
+              unusable or non-responsive. So, we took matters into our own
+              hands.
+            </p>
+            <p>
+              FujinKit is open source and made with love (and a touch of
+              despair), in the hope that one day — just maybe — a government
+              agency will use our work and make something usable.
+              <br /><br />
+              In democracy we trust!
+            </p>
+          </section>
+        </h3>
+      </section>
+      <section class="et-slide" id="tab-usage">
+        <h1>Usage</h1>
+        <h3>
+          You can simply add the script tag before closing the body tag we are
+          ready to rock!
+        </h3>
+        <div class="code-container">
+            <button class="copy-btn" title="Copy to clipboard">📋</button>
+            <pre><code class="language-html">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+            &lt;meta charset="UTF-8" /&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+            &lt;link rel="stylesheet" href="styles.css" /&gt;
+            &lt;title&gt;Document&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            ...
+            &lt;script src="https://cdn.jsdelivr.net/gh/inomag/elements-prototype@v0.0.1-alpha/dist/fujin-kit-lib.min.js"&gt;&lt;/script&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+            </code></pre>
+          </div>
+      </section>
+      <section class="et-slide" id="tab-button">
+        <h1>Button</h1>
+        <h3>A very pretty button</h3>
+        <section class="component-attributes">
+            <h2>&lt;fujin-button&gt; Attributes</h2>
+            <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Attribute</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                    <th>Look</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>variant</code></td>
+                    <td><code>string</code></td>
+                    <td><code>"solid"</code></td>
+                    <td>Defines the visual style of the button</td>
+                    <th><fj-button>Click Me</fj-button></th>
+                  </tr>
+                  <tr>
+                    <td><code>size</code></td>
+                    <td><code>string</code></td>
+                    <td><code>"md"</code></td>
+                    <td>Sets the size: <code>sm</code>, <code>md</code>, <code>lg</code></td>
+                    <th><fj-button>Click Me</fj-button></th>
+                  </tr>
+                  <tr>
+                    <td><code>disabled</code></td>
+                    <td><code>boolean</code></td>
+                    <td><code>false</code></td>
+                    <td>Disables the button</td>
+                    <th><fj-button>Click Me</fj-button></th>
+                  </tr>
+                  <tr>
+                    <td><code>icon</code></td>
+                    <td><code>string</code></td>
+                    <td><code>null</code></td>
+                    <td>Adds an icon by name (if supported)</td>
+                    <th><fj-button>Click Me</fj-button></th>
+                  </tr>
+                  <tr>
+                    <td><code>type</code></td>
+                    <td><code>string</code></td>
+                    <td><code>"button"</code></td>
+                    <td>Sets the native button type: <code>button</code>, <code>submit</code>, etc.</td>
+                    <th><fj-button>Click Me</fj-button></th>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        
+      </section>
+      <section class="et-slide" id="tab-text">
+        <h1>Text</h1>
+        <h3>Some text?</h3>
+        <fj-text>What?</fj-text>
+      </section>
+      <section class="et-slide" id="tab-other">
+        <h1>Other</h1>
+        <h3>something about other</h3>
+      </section>
+    </main>
+
+    <button id="back-to-top" title="Back to top">↑</button>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/inomag/elements-prototype@v0.0.1-alpha/dist/fujin-kit-lib.min.js"></script>
+  </body>
+</html>

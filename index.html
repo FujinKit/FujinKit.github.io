@@ -21,7 +21,6 @@
             <div class="nav-scrollable">
                 <h3 class="nav-section-title">Components</h3>
                 <div class="component-links">
-
                     <a class="nav-link" data-tab="accordion">Accordion</a>
                     <a class="nav-link" data-tab="avatar">Avatar</a>
                     <a class="nav-link" data-tab="button">Button</a>
@@ -40,22 +39,30 @@
             </div>
         </nav>
 
-
         <!-- Main Content -->
         <main class="main-content">
             <section id="button" class="tab-section hidden">
                 <h2>&lt;fj-button&gt;</h2>
                 <p>A versatile button component with multiple variants and sizes</p>
 
-                <br>
+                <br />
                 <h3>Button with different sizes</h3>
                 <fj-button size="small">small</fj-button>
-                <!-- <fj-button size="medium">medium</fj-button> -->
                 <fj-button size="large">large</fj-button>
 
-                <br>
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+        <code class="language-html">
+&lt;fj-button size="small"&gt;small&lt;/fj-button&gt;
+&lt;fj-button size="large"&gt;large&lt;/fj-button&gt;
+        </code>
+      </pre>
+                </div>
 
-                <br>
+                <br />
+
+                <br />
                 <h3>Button with variants</h3>
                 <fj-button type="primary">primary</fj-button>
                 <fj-button type="secondary">secondary</fj-button>
@@ -68,71 +75,40 @@
                 <fj-button rounded>rounded</fj-button>
                 <fj-button disabled>disabled</fj-button>
 
-                <br>
+                <br />
 
-
-
-                <h3>Attributes</h3>
-
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Attribute</th>
-                                <th>Type</th>
-                                <th>Default</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><code>variant</code></td>
-                                <td><code>string</code></td>
-                                <td><code>"solid"</code></td>
-                                <td>Defines the visual style of the button</td>
-                            </tr>
-                            <tr>
-                                <td><code>size</code></td>
-                                <td><code>string</code></td>
-                                <td><code>"md"</code></td>
-                                <td>Sets the size: <code>sm</code>, <code>md</code>, <code>lg</code></td>
-                            </tr>
-                            <tr>
-                                <td><code>disabled</code></td>
-                                <td><code>boolean</code></td>
-                                <td><code>false</code></td>
-                                <td>Disables the button</td>
-                            </tr>
-                            <tr>
-                                <td><code>icon</code></td>
-                                <td><code>string</code></td>
-                                <td><code>null</code></td>
-                                <td>Adds an icon by name (if supported)</td>
-                            </tr>
-                            <tr>
-                                <td><code>type</code></td>
-                                <td><code>string</code></td>
-                                <td><code>"button"</code></td>
-                                <td>Sets the native button type: <code>button</code>, <code>submit</code>, etc.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+        <code class="language-html">
+&lt;fj-button type="primary"&gt;primary&lt;/fj-button&gt;
+&lt;fj-button type="secondary"&gt;secondary&lt;/fj-button&gt;
+&lt;fj-button type="outlined"&gt;outlined&lt;/fj-button&gt;
+&lt;fj-button type="text"&gt;text&lt;/fj-button&gt;
+&lt;fj-button type="success"&gt;success&lt;/fj-button&gt;
+&lt;fj-button type="error"&gt;error&lt;/fj-button&gt;
+&lt;fj-button type="info"&gt;info&lt;/fj-button&gt;
+&lt;fj-button type="warning"&gt;warning&lt;/fj-button&gt;
+&lt;fj-button rounded&gt;rounded&lt;/fj-button&gt;
+&lt;fj-button disabled&gt;disabled&lt;/fj-button&gt;
+        </code>
+      </pre>
+                </div>
             </section>
 
             <section id="intro" class="tab-section active">
                 <h2>What is FujinKit?</h2>
                 <p>
                     FujinKit is a UI components library based on Web Components. Every UI library out there aims to be elegant, pixel-perfect, and full of life.
-                    <br><br> We do not.
-                    <br><br> We exist to serve the SASS (the traditional kind) builders of the world. Our mission? Create boring, lifeless, but highly usable components.
-                    <br><br> Inspired by government websites of India — in their soul-sucking glory — but made responsive and usable.
+                    <br /><br /> We do not. <br /><br /> We exist to serve the SASS (the traditional kind) builders of the world. Our mission? Create boring, lifeless, but highly usable components. <br /><br /> Inspired by government websites of India
+                    — in their soul-sucking glory — but made responsive and usable.
                 </p>
             </section>
 
             <section id="usage" class="tab-section hidden">
                 <h2>Usage</h2>
                 <div class="code-container">
-                    <button class="copy-btn">📋</button>
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
                     <pre><code class="language-html">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -147,27 +123,37 @@
     &lt;script src="https://cdn.jsdelivr.net/gh/inomag/elements-prototype@v0.0.1-alpha/dist/fujin-kit-lib.min.js"&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;
-          </code></pre>
+  </code></pre>
                 </div>
             </section>
 
-            
             <section id="accordion" class="tab-section hidden">
                 <h2>&lt;fj-accordion&gt;</h2>
                 <p>A versatile accordion</p>
 
-                <br>
+                <br />
                 <h3>Accordion examples</h3>
                 <fj-accordion title="Section Title" description="Some description" status='{"type": "success", "text": "Active"}' open>
                     <p>Accordion body content!</p>
                 </fj-accordion>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                    <code class="language-html">
+&lt;fj-accordion title="Section Title" description="Some description" status='{"type": "success", "text": "Active"}' open&gt;
+&lt;p&gt;Accordion body content!&lt;/p&gt;
+&lt;/fj-accordion&gt;
+                    </code>
+                  </pre>
+                </div>
             </section>
 
             <section id="text" class="tab-section hidden">
-                <h1>fj-text</h1>
+                <h2>&lt;fj-text&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
                 <fj-text variant="success" type="h1">H1</fj-text>
                 <fj-text variant="warning" type="h2">H2</fj-text>
                 <fj-text type="h3">H3</fj-text>
@@ -178,151 +164,377 @@
                 <fj-text semiBold>SemiBold</fj-text>
                 <fj-text italic>Italic</fj-text>
                 <fj-text underline>Underline</fj-text>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                  <code class="language-html">
+&lt;fj-text variant="success" type="h1"&gt;H1&lt;/fj-text&gt;
+&lt;fj-text variant="warning" type="h2"&gt;H2&lt;/fj-text&gt;
+&lt;fj-text type="h3"&gt;H3&lt;/fj-text&gt;
+&lt;fj-text&gt;Regular&lt;/fj-text&gt;
+&lt;fj-text type="label"&gt;Label&lt;/fj-text&gt;
+
+&lt;fj-text bold&gt;Bold&lt;/fj-text&gt;
+&lt;fj-text semiBold&gt;SemiBold&lt;/fj-text&gt;
+&lt;fj-text italic&gt;Italic&lt;/fj-text&gt;
+&lt;fj-text underline&gt;Underline&lt;/fj-text&gt;
+                  </code>
+                </pre>
+                </div>
             </section>
 
             <section id="avatar" class="tab-section hidden">
-                <h1>fj-avatar</h1>
+                <h2>&lt;fj-avatar&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
+                <h3>Avatar with image</h3>
                 <fj-avatar url="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?semt=ais_hybrid&w=740"></fj-avatar>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+        <code class="language-html">
+&lt;fj-avatar url="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?semt=ais_hybrid&w=740"&gt;&lt;/fj-avatar&gt;
+        </code>
+      </pre>
+                </div>
+
+                <br />
+                <h3>Avatar with text</h3>
                 <fj-avatar text="P" size="large" background="#17a2b8"></fj-avatar>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+        <code class="language-html">
+&lt;fj-avatar text="P" size="large" background="#17a2b8"&gt;&lt;/fj-avatar&gt;
+        </code>
+      </pre>
+                </div>
             </section>
 
             <section id="checkbox-group" class="tab-section hidden">
-                <h1>fj-checkbox-group</h1>
+                <h2>&lt;fj-checkbox-group&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
                 <fj-checkbox-group orientation="vertical">
                     <fj-checkbox value="apple" checked>Apple</fj-checkbox>
                     <fj-checkbox value="banana" size="large">Banana</fj-checkbox>
                     <fj-checkbox value="cherry" indeterminate>Cherry</fj-checkbox>
                 </fj-checkbox-group>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                  <code class="language-html">
+&lt;fj-checkbox-group orientation="vertical"&gt;
+  &lt;fj-checkbox value="apple" checked&gt;Apple&lt;/fj-checkbox&gt;
+  &lt;fj-checkbox value="banana" size="large"&gt;Banana&lt;/fj-checkbox&gt;
+  &lt;fj-checkbox value="cherry" indeterminate&gt;Cherry&lt;/fj-checkbox&gt;
+&lt;/fj-checkbox-group&gt;
+                  </code>
+                </pre>
+                </div>
             </section>
 
-
             <section id="chip" class="tab-section hidden">
-                <h1>fj-chip</h1>
+                <h2>&lt;fj-chip&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
                 <fj-chip type="info">
                     <span slot="icon">ℹ️</span> More info here
                 </fj-chip>
 
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                <code class="language-html">
+&lt;fj-chip type="info"&gt;
+&lt;span slot="icon"&gt;ℹ️&lt;/span&gt; More info here
+&lt;/fj-chip&gt;
+                </code>
+              </pre>
+                </div>
+
+                <br />
+
                 <fj-chip type="warning" bold>
                     <span slot="icon">⚠️</span> Warning: Low battery
                 </fj-chip>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                  <code class="language-html">
+&lt;fj-chip type="warning" bold&gt;
+  &lt;span slot="icon"&gt;⚠️&lt;/span&gt; Warning: Low battery
+&lt;/fj-chip&gt;
+                  </code>
+                </pre>
+                </div>
             </section>
 
-
             <section id="divider" class="tab-section hidden">
-                <h1>fj-divider</h1>
+                <h2>&lt;fj-divider&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
+                <h3>Horizontal Divider</h3>
                 <fj-divider></fj-divider>
 
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                  <code class="language-html">
+&lt;fj-divider&gt;&lt;/fj-divider&gt;
+                  </code>
+                </pre>
+                </div>
+
+                <br />
+
+                <h3>Vertical Divider</h3>
                 <!-- Vertical Divider (100% height of container) -->
-                <div style="display: flex; height: 100px;">
+                <div style="display: flex; height: 100px">
                     <div>Section A</div>
                     <fj-divider orientation="vertical"></fj-divider>
                     <div>Section B</div>
                 </div>
 
-                <!-- Dashed Horizontal Divider -->
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                <code class="language-html">
+&lt;div style="display: flex; height: 100px;"&gt;
+  &lt;div&gt;Section A&lt;/div&gt;
+  &lt;fj-divider orientation="vertical"&gt;&lt;/fj-divider&gt;
+  &lt;div&gt;Section B&lt;/div&gt;
+&lt;/div&gt;
+                </code>
+              </pre>
+                </div>
+
+                <br />
+
+                <h3>Dashed Horizontal Divider</h3>
                 <fj-divider variant="dashed"></fj-divider>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+              <code class="language-html">
+&lt;fj-divider variant="dashed"&gt;&lt;/fj-divider&gt;
+              </code>
+            </pre>
+                </div>
+
+                <br />
 
                 <!-- Thick Vertical Divider -->
                 <fj-divider orientation="vertical" thickness="4px"></fj-divider>
             </section>
 
             <section id="slider" class="tab-section hidden">
-                <h1>fj-slider</h1>
+                <h2>&lt;fj-slider&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
 
                 <fj-slider min="0" max="100" value="20" display-suffix="%"></fj-slider>
 
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                <code class="language-html">
+&lt;fj-slider min="0" max="100" value="20" display-suffix="%"&gt;&lt;/fj-slider&gt;
+                </code>
+              </pre>
+                </div>
             </section>
 
             <section id="switch" class="tab-section hidden">
-                <h1>fj-switch</h1>
+                <h2>&lt;fj-switch&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
 
                 <fj-switch value="true"></fj-switch>
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+                <code class="language-html">
+&lt;fj-switch value="true"&gt;&lt;/fj-switch&gt;
+                </code>
+              </pre>
+                </div>
+
+                <br />
                 <fj-switch size="small"></fj-switch>
 
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+              <code class="language-html">
+&lt;fj-switch size="small"&gt;&lt;/fj-switch&gt;
+              </code>
+            </pre>
+                </div>
             </section>
 
             <section id="card" class="tab-section hidden">
-                <h1>fj-card</h1>
+                <h2>&lt;fj-card&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
 
                 <fj-card>
                     <fj-text type="h1">Test Card</fj-text>
                     <fj-button label="Success" type="success" size="large" rounded>Success</fj-button>
                 </fj-card>
 
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+              <code class="language-html">
+&lt;fj-card&gt;
+  &lt;fj-text type="h1"&gt;Test Card&lt;/fj-text&gt;
+  &lt;fj-button label="Success" type="success" size="large" rounded&gt;Success&lt;/fj-button&gt;
+&lt;/fj-card&gt;
+              </code>
+            </pre>
+                </div>
+
+                <br>
+                <br>
+
                 <fj-card type="error">
                     <fj-text type="h1">Error Card</fj-text>
                     <fj-button id="clickTest" type="primary" rounded>Click Me!</fj-button>
                 </fj-card>
 
+
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+            <code class="language-html">
+&lt;fj-card type="error"&gt;
+  &lt;fj-text type="h1"&gt;Error Card&lt;/fj-text&gt;
+  &lt;fj-button id="clickTest" type="primary" rounded&gt;Click Me!&lt;/fj-button&gt;
+&lt;/fj-card&gt;
+            </code>
+          </pre>
+                </div>
             </section>
 
             <section id="carousel" class="tab-section hidden">
-                <h1>fj-carousel</h1>
+                <h2>&lt;fj-carousel&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
 
                 <fj-carousel showNavArrows="true" showNavDots="true" autoSlide="true" autoSlideInterval="4000" slides='["https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", "https://img.freepik.com/free-photo/bright-neon-colors-shining-wild-chameleon_23-2151682784.jpg"]'
-                    height="150px" width="200px">
+                    height="400px" width="500px">
                 </fj-carousel>
 
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+            <code class="language-html">
+&lt;fj-carousel 
+  showNavArrows="true" 
+  showNavDots="true" 
+  autoSlide="true" 
+  autoSlideInterval="4000" 
+  slides='["https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", "https://img.freepik.com/free-photo/bright-neon-colors-shining-wild-chameleon_23-2151682784.jpg"]'
+  eight="400px" 
+  width="500px"&gt;
+&lt;/fj-carousel&gt;
+            </code>
+          </pre>
+                </div>
             </section>
 
             <section id="skeleton" class="tab-section hidden">
-                <h1>fj-skeleton</h1>
+                <h2>&lt;fj-skeleton&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
 
-                <fj-skeleton lines="4" rounded avatar></fj-skeleton>
+                <fj-skeleton lines="4" avatar></fj-skeleton>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+          <code class="language-html">
+&lt;fj-skeleton lines="4" avatar&gt;&lt;/fj-skeleton&gt;
+          </code>
+        </pre>
+                </div>
+
+                <br />
                 <fj-skeleton rect></fj-skeleton>
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+        <code class="language-html">
+&lt;fj-skeleton rect&gt;&lt;/fj-skeleton&gt;
+        </code>
+      </pre>
+                </div>
+                <br />
                 <fj-skeleton lines="2"></fj-skeleton>
-
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+        <code class="language-html">
+&lt;fj-skeleton lines="2"&gt;&lt;/fj-skeleton&gt;
+        </code>
+      </pre>
+                </div>
             </section>
 
             <section id="image-loader" class="tab-section hidden">
-                <h1>fj-image-loader</h1>
+                <h2>&lt;fj-image-loader&gt;</h2>
                 <p></p>
 
-                <br>
+                <br />
 
-                <fj-image-loader height="100px" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Sample Image">
+                <fj-image-loader height="500px" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Sample Image">
                 </fj-image-loader>
+
+                <div class="code-container">
+                    <button class="copy-btn" aria-label="Copy code">📋</button>
+                    <pre>
+          <code class="language-html">
+&lt;fj-image-loader 
+  height="500px" 
+  src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Sample Image"&gt;
+&lt;/fj-image-loader&gt;
+          </code>
+        </pre>
+                </div>
             </section>
-
         </main>
-        </div>
+    </div>
 
-        <!-- Prism for code highlighting -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+    <!-- Prism for code highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
 
-        <!-- Your Script -->
-        <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-html.min.js"></script>
 
-        <script src="https://cdn.jsdelivr.net/gh/inomag/fujin-kit@v0.0.2-alpha/dist/fujin-kit-lib.min.js"></script>
+    <!-- Your Script -->
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/inomag/fujin-kit@v0.0.2-alpha/dist/fujin-kit-lib.min.js"></script>
 </body>
 
 </html>

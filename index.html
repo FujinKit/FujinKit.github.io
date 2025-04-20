@@ -29,7 +29,7 @@
                     <a class="nav-link" data-tab="checkbox-group">CheckboxGroup</a>
                     <a class="nav-link" data-tab="chip">Chip</a>
                     <a class="nav-link" data-tab="divider">Divider</a>
-                    <a class="nav-link" data-tab="image-loader">ImageLoader</a>
+                    <!-- <a class="nav-link" data-tab="image-loader">ImageLoader</a> -->
                     <a class="nav-link" data-tab="slider">Slider</a>
                     <a class="nav-link" data-tab="skeleton">Skeleton</a>
                     <a class="nav-link" data-tab="switch">Switch</a>
@@ -99,9 +99,25 @@
             <section id="intro" class="tab-section active">
                 <h2>What is FujinKit?</h2>
                 <p>
-                    FujinKit is a UI components library based on Web Components. Every UI library out there aims to be elegant, pixel-perfect, and full of life.
-                    <br /><br /> We do not. <br /><br /> We exist to serve the SASS (the traditional kind) builders of the world. Our mission? Create boring, lifeless, but highly usable components. <br /><br /> Inspired by government websites of India
-                    — in their soul-sucking glory — but made responsive and usable.
+                    FujinKit is a UI components library based on
+                    <strong>Web Components</strong>.
+                    <br />
+                    <br /> Every UI library out there aims to be elegant, pixel-perfect, and full of life.
+                    <br />
+                    <br />
+                    <strong>We do not.</strong>
+                    <br />
+                    <br /> We exist to serve the lifeless builders of the world.
+                    <br />
+                    <br /> Every piece of our design is inspired by the beautiful bleakness of the Indian government and PAAS websites. Their soul crushing, joyless layouts are our blueprint.
+                    <br />
+                    <br /> But even we as user, get frustrated when those same sites we adore so much are unusable and non-responsive at times. So, we took matters into our own hands.
+                    <br />
+                    <br /> FujinKit is open source and made with love (and a touch of despair), in the hopes that one day -- just maybe a government agency will use our library and make something usable.
+                    <br />
+                    <br />
+                    <br />
+                    <br /> In democracy we trust!
                 </p>
             </section>
 
@@ -196,7 +212,9 @@
                     <button class="copy-btn" aria-label="Copy code">📋</button>
                     <pre>
         <code class="language-html">
-&lt;fj-avatar url="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?semt=ais_hybrid&w=740"&gt;&lt;/fj-avatar&gt;
+&lt;fj-avatar 
+url="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?semt=ais_hybrid&w=740"&gt;
+&lt;/fj-avatar&gt;
         </code>
       </pre>
                 </div>
@@ -408,15 +426,13 @@
             </pre>
                 </div>
 
-                <br>
-                <br>
+                <br />
+                <br />
 
                 <fj-card type="error">
                     <fj-text type="h1">Error Card</fj-text>
                     <fj-button id="clickTest" type="primary" rounded>Click Me!</fj-button>
                 </fj-card>
-
-
 
                 <div class="code-container">
                     <button class="copy-btn" aria-label="Copy code">📋</button>
@@ -450,7 +466,8 @@
   showNavDots="true" 
   autoSlide="true" 
   autoSlideInterval="4000" 
-  slides='["https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", "https://img.freepik.com/free-photo/bright-neon-colors-shining-wild-chameleon_23-2151682784.jpg"]'
+  slides='["https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", 
+  "https://img.freepik.com/free-photo/bright-neon-colors-shining-wild-chameleon_23-2151682784.jpg"]'
   eight="400px" 
   width="500px"&gt;
 &lt;/fj-carousel&gt;
@@ -498,7 +515,7 @@
                 </div>
             </section>
 
-            <section id="image-loader" class="tab-section hidden">
+            <!-- <section id="image-loader" class="tab-section hidden">
                 <h2>&lt;fj-image-loader&gt;</h2>
                 <p></p>
 
@@ -518,7 +535,7 @@
           </code>
         </pre>
                 </div>
-            </section>
+            </section> -->
         </main>
     </div>
 

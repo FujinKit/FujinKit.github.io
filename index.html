@@ -1,171 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Prism.js CSS Theme -->
-<link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-
-<!-- Prism.js Core -->
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
-
-<!-- Optional: Load language support (HTML, JS, etc.) -->
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-javascript.min.js"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
-
+    <title>FujinKit</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <!-- Hero -->
-    <section class="et-hero-tabs">
-      <h1>FUJINKIT</h1>
-      <h3>UI components library for SASS builders</h3>
-      <div class="et-hero-tabs-container">
-        <a class="et-hero-tab" href="#tab-intro">Introduction</a>
-        <a class="et-hero-tab" href="#tab-usage">Usage</a>
-        <a class="et-hero-tab" href="#tab-button">Button</a>
-        <a class="et-hero-tab" href="#tab-text">Text</a>
-        <a class="et-hero-tab" href="#tab-other">Other</a>
-        <span class="et-hero-tab-slider"></span>
-      </div>
-    </section>
+</head>
 
-    <!-- Main -->
-    <main class="et-main">
-      <section class="et-slide" id="tab-intro">
-        <h3>
-          <section class="intro">
-            <h2>What is FujinKit?</h2>
-            <p>
-              FujinKit is a UI components library based on Web Components. Every
-              UI library out there aims to be elegant, pixel-perfect, and full
-              of life.
-              <br /><br />
-              We do not.
-              <br /><br />
-              We exist to serve the SASS (the traditional kind) builders of the
-              world. Our mission? Create boring, lifeless, but highly usable
-              components.
-            </p>
-            <p>
-              Every piece of our design is inspired by the beautiful bleakness
-              of Indian government websites. Their soul-crushing, joyless
-              layouts are our blueprint.
-              <br /><br />
-              But even we, as users, get frustrated when those same sites are
-              unusable or non-responsive. So, we took matters into our own
-              hands.
-            </p>
-            <p>
-              FujinKit is open source and made with love (and a touch of
-              despair), in the hope that one day — just maybe — a government
-              agency will use our work and make something usable.
-              <br /><br />
-              In democracy we trust!
-            </p>
-          </section>
-        </h3>
-      </section>
-      <section class="et-slide" id="tab-usage">
-        <h1>Usage</h1>
-        <h3>
-          You can simply add the script tag before closing the body tag we are
-          ready to rock!
-        </h3>
-        <div class="code-container">
-            <button class="copy-btn" title="Copy to clipboard">📋</button>
-            <pre><code class="language-html">
-        &lt;!DOCTYPE html&gt;
-        &lt;html lang="en"&gt;
-          &lt;head&gt;
-            &lt;meta charset="UTF-8" /&gt;
-            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-            &lt;link rel="stylesheet" href="styles.css" /&gt;
-            &lt;title&gt;Document&lt;/title&gt;
-          &lt;/head&gt;
-          &lt;body&gt;
-            ...
-            &lt;script src="https://cdn.jsdelivr.net/gh/inomag/elements-prototype@v0.0.1-alpha/dist/fujin-kit-lib.min.js"&gt;&lt;/script&gt;
-          &lt;/body&gt;
-        &lt;/html&gt;
-            </code></pre>
-          </div>
-      </section>
-      <section class="et-slide" id="tab-button">
-        <h1>Button</h1>
-        <h3>A very pretty button</h3>
-        <section class="component-attributes">
-            <h2>&lt;fujin-button&gt; Attributes</h2>
-            <div class="table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Attribute</th>
-                    <th>Type</th>
-                    <th>Default</th>
-                    <th>Description</th>
-                    <th>Look</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><code>variant</code></td>
-                    <td><code>string</code></td>
-                    <td><code>"solid"</code></td>
-                    <td>Defines the visual style of the button</td>
-                    <th><fj-button>Click Me</fj-button></th>
-                  </tr>
-                  <tr>
-                    <td><code>size</code></td>
-                    <td><code>string</code></td>
-                    <td><code>"md"</code></td>
-                    <td>Sets the size: <code>sm</code>, <code>md</code>, <code>lg</code></td>
-                    <th><fj-button>Click Me</fj-button></th>
-                  </tr>
-                  <tr>
-                    <td><code>disabled</code></td>
-                    <td><code>boolean</code></td>
-                    <td><code>false</code></td>
-                    <td>Disables the button</td>
-                    <th><fj-button>Click Me</fj-button></th>
-                  </tr>
-                  <tr>
-                    <td><code>icon</code></td>
-                    <td><code>string</code></td>
-                    <td><code>null</code></td>
-                    <td>Adds an icon by name (if supported)</td>
-                    <th><fj-button>Click Me</fj-button></th>
-                  </tr>
-                  <tr>
-                    <td><code>type</code></td>
-                    <td><code>string</code></td>
-                    <td><code>"button"</code></td>
-                    <td>Sets the native button type: <code>button</code>, <code>submit</code>, etc.</td>
-                    <th><fj-button>Click Me</fj-button></th>
-                  </tr>
-                </tbody>
-              </table>
+<body>
+    <div class="layout">
+        <!-- Sidebar Navigation -->
+        <nav class="side-nav">
+            <div class="nav-static">
+                <h1 class="logo">FujinKit</h1>
+                <a class="nav-link active-link" data-tab="intro">Intro</a>
+                <a class="nav-link" data-tab="usage">Usage</a>
             </div>
-          </section>
-        
-      </section>
-      <section class="et-slide" id="tab-text">
-        <h1>Text</h1>
-        <h3>Some text?</h3>
-        <fj-text>What?</fj-text>
-      </section>
-      <section class="et-slide" id="tab-other">
-        <h1>Other</h1>
-        <h3>something about other</h3>
-      </section>
-    </main>
 
-    <button id="back-to-top" title="Back to top">↑</button>
+            <div class="nav-scrollable">
+                <h3 class="nav-section-title">Components</h3>
+                <div class="component-links">
+                    <a class="nav-link" data-tab="button">Button</a>
+                    <a class="nav-link" data-tab="accordion">Accordion</a>
+                    <a class="nav-link" data-tab="text">Text</a>
+                    <a class="nav-link" data-tab="avatar">Avatar</a>
+                    <a class="nav-link" data-tab="checkbox-group">CheckboxGroup</a>
+                    <a class="nav-link" data-tab="chip">Chip</a>
+                    <a class="nav-link" data-tab="divider">Divider</a>
+                    <a class="nav-link" data-tab="slider">Slider</a>
+                    <a class="nav-link" data-tab="switch">Switch</a>
+                    <a class="nav-link" data-tab="card">Card</a>
+                    <a class="nav-link" data-tab="carousel">Carousel</a>
+                    <a class="nav-link" data-tab="skeleton">Skeleton</a>
+                    <a class="nav-link" data-tab="image-loader">ImageLoader</a>
+                    <!-- Add more components here -->
+                </div>
+            </div>
+        </nav>
 
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/inomag/elements-prototype@v0.0.1-alpha/dist/fujin-kit-lib.min.js"></script>
-  </body>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="button" class="tab-section hidden">
+                <h2>&lt;fj-button&gt;</h2>
+                <p>A versatile button component with multiple variants and sizes</p>
+
+                <br>
+                <h3>Button with different sizes</h3>
+                <fj-button size="small">small</fj-button>
+                <!-- <fj-button size="medium">medium</fj-button> -->
+                <fj-button size="large">large</fj-button>
+
+                <br>
+
+                <br>
+                <h3>Button with variants</h3>
+                <fj-button type="primary">primary</fj-button>
+                <fj-button type="secondary">secondary</fj-button>
+                <fj-button type="outlined">outlined</fj-button>
+                <fj-button type="text">text</fj-button>
+                <fj-button type="success">success</fj-button>
+                <fj-button type="error">error</fj-button>
+                <fj-button type="info">info</fj-button>
+                <fj-button type="warning">warning</fj-button>
+                <fj-button rounded>rounded</fj-button>
+                <fj-button disabled>disabled</fj-button>
+
+                <br>
+
+
+
+                <h3>Attributes</h3>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Attribute</th>
+                                <th>Type</th>
+                                <th>Default</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>variant</code></td>
+                                <td><code>string</code></td>
+                                <td><code>"solid"</code></td>
+                                <td>Defines the visual style of the button</td>
+                            </tr>
+                            <tr>
+                                <td><code>size</code></td>
+                                <td><code>string</code></td>
+                                <td><code>"md"</code></td>
+                                <td>Sets the size: <code>sm</code>, <code>md</code>, <code>lg</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>disabled</code></td>
+                                <td><code>boolean</code></td>
+                                <td><code>false</code></td>
+                                <td>Disables the button</td>
+                            </tr>
+                            <tr>
+                                <td><code>icon</code></td>
+                                <td><code>string</code></td>
+                                <td><code>null</code></td>
+                                <td>Adds an icon by name (if supported)</td>
+                            </tr>
+                            <tr>
+                                <td><code>type</code></td>
+                                <td><code>string</code></td>
+                                <td><code>"button"</code></td>
+                                <td>Sets the native button type: <code>button</code>, <code>submit</code>, etc.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section id="intro" class="tab-section active">
+                <h2>What is FujinKit?</h2>
+                <p>
+                    FujinKit is a UI components library based on Web Components. Every UI library out there aims to be elegant, pixel-perfect, and full of life.
+                    <br><br> We do not.
+                    <br><br> We exist to serve the SASS (the traditional kind) builders of the world. Our mission? Create boring, lifeless, but highly usable components.
+                    <br><br> Inspired by government websites of India — in their soul-sucking glory — but made responsive and usable.
+                </p>
+            </section>
+
+            <section id="usage" class="tab-section hidden">
+                <h2>Usage</h2>
+                <div class="code-container">
+                    <button class="copy-btn">📋</button>
+                    <pre><code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;link rel="stylesheet" href="styles.css" /&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+    &lt;script src="https://cdn.jsdelivr.net/gh/inomag/elements-prototype@v0.0.1-alpha/dist/fujin-kit-lib.min.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code></pre>
+                </div>
+            </section>
+
+
+            <section id="accordion" class="tab-section hidden">
+                <h2>&lt;fj-accordion&gt;</h2>
+                <p>A versatile accordion</p>
+
+                <br>
+                <h3>Accordion examples</h3>
+                <fj-accordion title="Section Title" description="Some description" status='{"type": "success", "text": "Active"}' open>
+                    <p>Accordion body content!</p>
+                </fj-accordion>
+            </section>
+
+            <section id="text" class="tab-section hidden">
+                <h1>fj-text</h1>
+                <p></p>
+
+                <br>
+                <fj-text variant="success" type="h1">H1</fj-text>
+                <fj-text variant="warning" type="h2">H2</fj-text>
+                <fj-text type="h3">H3</fj-text>
+                <fj-text>Regular</fj-text>
+                <fj-text type="label">Label</fj-text>
+
+                <fj-text bold>Bold</fj-text>
+                <fj-text semiBold>SemiBold</fj-text>
+                <fj-text italic>Italic</fj-text>
+                <fj-text underline>Underline</fj-text>
+            </section>
+
+            <section id="avatar" class="tab-section hidden">
+                <h1>fj-avatar</h1>
+                <p></p>
+
+                <br>
+                <fj-avatar url="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?semt=ais_hybrid&w=740"></fj-avatar>
+                <fj-avatar text="P" size="large" background="#17a2b8"></fj-avatar>
+            </section>
+
+            <section id="checkbox-group" class="tab-section hidden">
+                <h1>fj-checkbox-group</h1>
+                <p></p>
+
+                <br>
+                <fj-checkbox-group orientation="vertical">
+                    <fj-checkbox value="apple" checked>Apple</fj-checkbox>
+                    <fj-checkbox value="banana" size="large">Banana</fj-checkbox>
+                    <fj-checkbox value="cherry" indeterminate>Cherry</fj-checkbox>
+                </fj-checkbox-group>
+            </section>
+
+
+            <section id="chip" class="tab-section hidden">
+                <h1>fj-chip</h1>
+                <p></p>
+
+                <br>
+                <fj-chip type="info">
+                    <span slot="icon">ℹ️</span> More info here
+                </fj-chip>
+
+                <fj-chip type="warning" bold>
+                    <span slot="icon">⚠️</span> Warning: Low battery
+                </fj-chip>
+            </section>
+
+
+            <section id="divider" class="tab-section hidden">
+                <h1>fj-divider</h1>
+                <p></p>
+
+                <br>
+                <fj-divider></fj-divider>
+
+                <!-- Vertical Divider (100% height of container) -->
+                <div style="display: flex; height: 100px;">
+                    <div>Section A</div>
+                    <fj-divider orientation="vertical"></fj-divider>
+                    <div>Section B</div>
+                </div>
+
+                <!-- Dashed Horizontal Divider -->
+                <fj-divider variant="dashed"></fj-divider>
+
+                <!-- Thick Vertical Divider -->
+                <fj-divider orientation="vertical" thickness="4px"></fj-divider>
+            </section>
+
+            <section id="slider" class="tab-section hidden">
+                <h1>fj-slider</h1>
+                <p></p>
+
+                <br>
+
+                <fj-slider min="0" max="100" value="20" display-suffix="%"></fj-slider>
+
+            </section>
+
+            <section id="switch" class="tab-section hidden">
+                <h1>fj-switch</h1>
+                <p></p>
+
+                <br>
+
+                <fj-switch value="true"></fj-switch>
+                <fj-switch size="small"></fj-switch>
+
+            </section>
+
+            <section id="card" class="tab-section hidden">
+                <h1>fj-card</h1>
+                <p></p>
+
+                <br>
+
+                <fj-card>
+                    <fj-text type="h1">Test Card</fj-text>
+                    <fj-button label="Success" type="success" size="large" rounded>Success</fj-button>
+                </fj-card>
+
+                <fj-card type="error">
+                    <fj-text type="h1">Error Card</fj-text>
+                    <fj-button id="clickTest" type="primary" rounded>Click Me!</fj-button>
+                </fj-card>
+
+            </section>
+
+            <section id="carousel" class="tab-section hidden">
+                <h1>fj-carousel</h1>
+                <p></p>
+
+                <br>
+
+                <fj-carousel showNavArrows="true" showNavDots="true" autoSlide="true" autoSlideInterval="4000" slides='["https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg", "https://img.freepik.com/free-photo/bright-neon-colors-shining-wild-chameleon_23-2151682784.jpg"]'
+                    height="150px" width="200px">
+                </fj-carousel>
+
+            </section>
+
+            <section id="skeleton" class="tab-section hidden">
+                <h1>fj-skeleton</h1>
+                <p></p>
+
+                <br>
+
+                <fj-skeleton lines="4" rounded avatar></fj-skeleton>
+                <fj-skeleton rect></fj-skeleton>
+                <fj-skeleton lines="2"></fj-skeleton>
+
+            </section>
+
+            <section id="image-loader" class="tab-section hidden">
+                <h1>fj-image-loader</h1>
+                <p></p>
+
+                <br>
+
+                <fj-image-loader height="100px" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="Sample Image">
+                </fj-image-loader>
+            </section>
+
+        </main>
+        </div>
+
+        <!-- Prism for code highlighting -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-markup.min.js"></script>
+
+        <!-- Your Script -->
+        <script src="index.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/gh/inomag/fujin-kit@v0.0.2-alpha/dist/fujin-kit-lib.min.js"></script>
+</body>
+
 </html>
